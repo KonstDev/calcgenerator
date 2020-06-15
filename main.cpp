@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    ofstream write ("gencalc.cpp");
+    ofstream write ("generatedcalc.cpp");
     //
     //cout << "Hello world!" << endl;
     write << "#include <iostream>" << endl;
@@ -13,8 +13,8 @@ int main()
     write << "int main()" << endl << "{" << endl;
     write << "int a1 = 0, a2 = 0;" << endl;
     write << "cin >> a1 >> a2;" << endl;
-    for (int i = 0; i < 1001; i++)
-        for (int j = 0; j < 1001; j++)
+    for (int i = 0; i < 501; i++)
+        for (int j = 0; j < 501; j++)
             {
                 write << "if (a1 == " <<  i << " && a2 == " << j << ");"<< endl;
                 write << "        cout << " << i + j << ";" << endl;
